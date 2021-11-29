@@ -36,11 +36,17 @@
                                     </imageView>
                                 </subviews>
                             </stackView>
-                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="bgs-p3-BJR">
-                                <rect key="frame" x="174" y="731" width="67" height="31"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="bgs-p3-BJR">
+                                <rect key="frame" x="147" y="742" width="120" height="40"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="120" id="OAR-3T-X3t"/>
+                                    <constraint firstAttribute="height" constant="40" id="vpO-WT-i4a"/>
+                                </constraints>
                                 <state key="normal" title="Button"/>
-                                <buttonConfiguration key="configuration" style="plain" title="Button"/>
+                                <buttonConfiguration key="configuration" style="plain" title="ROLL">
+                                    <fontDescription key="titleFontDescription" style="UICTFontTextStyleBody"/>
+                                    <color key="baseForegroundColor" systemColor="labelColor"/>
+                                </buttonConfiguration>
                             </button>
                         </subviews>
                         <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
@@ -50,7 +56,9 @@
                             <constraint firstItem="HWQ-SJ-fIE" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="20" id="4NP-wr-gOq"/>
                             <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="HWQ-SJ-fIE" secondAttribute="trailing" constant="20" id="95H-cd-kx1"/>
                             <constraint firstItem="HWQ-SJ-fIE" firstAttribute="centerY" secondItem="8bC-Xf-vdC" secondAttribute="centerY" id="P8X-Bx-TbG"/>
+                            <constraint firstItem="bgs-p3-BJR" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="R6n-5N-ATm"/>
                             <constraint firstItem="Lr7-ij-oTy" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="fGE-pH-0zS"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="bottom" secondItem="bgs-p3-BJR" secondAttribute="bottom" constant="80" id="fWL-oJ-SIK"/>
                             <constraint firstItem="HWQ-SJ-fIE" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="pSp-wS-Gcu"/>
                         </constraints>
                     </view>
@@ -61,6 +69,9 @@
         </scene>
     </scenes>
     <resources>
+        <systemColor name="labelColor">
+            <color white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+        </systemColor>
         <systemColor name="systemBackgroundColor">
             <color white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
         </systemColor>
