@@ -22,14 +22,20 @@
                                 <nil key="textColor"/>
                                 <nil key="highlightedColor"/>
                             </label>
-                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="M0Y-85-Va5">
-                                <rect key="frame" x="35" y="344" width="140" height="136"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                            </imageView>
-                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="28k-Yc-cyE">
-                                <rect key="frame" x="244" y="344" width="140" height="136"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                            </imageView>
+                            <stackView opaque="NO" contentMode="scaleToFill" distribution="fillEqually" spacing="15" translatesAutoresizingMaskIntoConstraints="NO" id="HWQ-SJ-fIE">
+                                <rect key="frame" x="20" y="358.5" width="374" height="179.5"/>
+                                <subviews>
+                                    <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="M0Y-85-Va5">
+                                        <rect key="frame" x="0.0" y="0.0" width="179.5" height="179.5"/>
+                                        <constraints>
+                                            <constraint firstAttribute="width" secondItem="M0Y-85-Va5" secondAttribute="height" multiplier="1:1" id="Roe-WH-aFE"/>
+                                        </constraints>
+                                    </imageView>
+                                    <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="28k-Yc-cyE">
+                                        <rect key="frame" x="194.5" y="0.0" width="179.5" height="179.5"/>
+                                    </imageView>
+                                </subviews>
+                            </stackView>
                             <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="bgs-p3-BJR">
                                 <rect key="frame" x="174" y="731" width="67" height="31"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
@@ -41,7 +47,11 @@
                         <color key="backgroundColor" systemColor="systemBackgroundColor"/>
                         <constraints>
                             <constraint firstItem="Lr7-ij-oTy" firstAttribute="top" secondItem="6Tk-OE-BBY" secondAttribute="top" constant="80" id="3wn-4e-fI0"/>
+                            <constraint firstItem="HWQ-SJ-fIE" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="20" id="4NP-wr-gOq"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="HWQ-SJ-fIE" secondAttribute="trailing" constant="20" id="95H-cd-kx1"/>
+                            <constraint firstItem="HWQ-SJ-fIE" firstAttribute="centerY" secondItem="8bC-Xf-vdC" secondAttribute="centerY" id="P8X-Bx-TbG"/>
                             <constraint firstItem="Lr7-ij-oTy" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="fGE-pH-0zS"/>
+                            <constraint firstItem="HWQ-SJ-fIE" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="pSp-wS-Gcu"/>
                         </constraints>
                     </view>
                 </viewController>
