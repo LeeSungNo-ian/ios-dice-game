@@ -9,11 +9,26 @@ import UIKit
 
 class ViewController: UIViewController {
 
+    @IBOutlet weak var firstImageView: UIImageView!
+    @IBOutlet weak var secondImageView: UIImageView!
+    
+    
+    
+    
+    
+    
+    
     override func viewDidLoad() {
         super.viewDidLoad()
         // Do any additional setup after loading the view.
     }
 
+    
+    
+    
+    
+    
+    
 
 }
 

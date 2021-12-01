@@ -62,6 +62,10 @@
                             <constraint firstItem="HWQ-SJ-fIE" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="pSp-wS-Gcu"/>
                         </constraints>
                     </view>
+                    <connections>
+                        <outlet property="firstImageView" destination="M0Y-85-Va5" id="Rg9-hN-GQv"/>
+                        <outlet property="secondImageView" destination="28k-Yc-cyE" id="QB5-63-dgV"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
             </objects>
