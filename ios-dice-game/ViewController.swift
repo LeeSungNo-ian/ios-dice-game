@@ -20,7 +20,9 @@ class ViewController: UIViewController {
     
     override func viewDidLoad() {
         super.viewDidLoad()
-        // Do any additional setup after loading the view.
+        
+        firstImageView.image = diceArray[1]
+        secondImageView.image = diceArray[1]
     }
 
     
