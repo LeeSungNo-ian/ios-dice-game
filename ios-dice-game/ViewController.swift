@@ -26,6 +26,7 @@ class ViewController: UIViewController {
     
     @IBAction func rollButtonTapped(_ sender: UIButton) {
         firstImageView.image = diceArray.randomElement()
+        secondImageView.image = diceArray.randomElement()
     }
     
     
